@@ -4,29 +4,6 @@ An AI-powered HR analytics assistant that converts natural-language questions in
 
 This Streamlit application allows users to ask questions about employee data in plain English. It generates SQL queries, validates them to ensure read-only database access, executes them against a SQLite database, and presents the results in an easy-to-understand format.
 
-### Key Features
-
-- **Natural Language to SQL:** Convert plain-English questions into SQL queries.
-- **AI-Powered Query Generation:** Uses LangChain and Groq LLM.
-- **SQL Validation:** Validates generated SQL queries and restricts execution to read-only operations.
-- **Database Integration:** Uses SQLite with a fictional employee dataset.
-- **Interactive UI:** Built with Streamlit for an intuitive user experience.
-- **Query Explanation:** Displays the generated SQL query along with a brief explanation.
-- **HR Analytics:** Supports employee-related questions using Indian names and locations.
-
-### Technology Stack
-
-- Python
-- LangChain
-- Groq LLM
-- Streamlit
-- SQLite
-
-The application keeps the existing Groq integration and model
-(`openai/gpt-oss-120b`). It initializes a new SQLite database at
-`data/employees.db`; the original database and data-generation files are left
-untouched.
-
 ## Features
 
 - Natural-language questions about employee records.
