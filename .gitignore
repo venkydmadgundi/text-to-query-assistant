@@ -5,6 +5,8 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-data/*.db
-data/*.db-shm
-data/*.db-wal
+
+pick b4b36cb # Add GitHub Actions workflow for Hugging Face sync
+pick 6afd257 # Add data folder
+pick 97f0ef7 # Add data folder
+pick 099c4fb # Delete .github/workflows directory
