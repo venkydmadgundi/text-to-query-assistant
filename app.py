@@ -110,8 +110,8 @@ if run_sample:
 
 if not settings.groq_api_key:
     st.error(
-        "Groq API key is not configured. Add GROQ_API_KEY to your local .env file "
-        "or environment, then restart the app."
+        "Groq API key is not configured. Locally, add GROQ_API_KEY to your .env file. "
+        "On Render, add it in your web service's Environment settings, then redeploy."
     )
 
 with st.form("query_form"):

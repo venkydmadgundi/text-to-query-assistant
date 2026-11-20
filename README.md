@@ -147,6 +147,14 @@ optional; leaving it blank selects the local SQLite file. Do not commit `.env`,
 API keys, or a production database. The provided `.gitignore` excludes these
 files.
 
+### Render deployment
+
+Render does not automatically upload the local `.env` file. In the Render
+dashboard, open the app's web service, go to **Environment**, and add
+`GROQ_API_KEY` with your Groq API key as its value. Save the change and redeploy
+the service. Keep the key in Render's environment settings; do not commit it to
+the repository.
+
 ## Database initialization
 
 On application startup, SQLAlchemy creates the `employees` table and its manager
