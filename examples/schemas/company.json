@@ -1,0 +1,25 @@
+{
+  "tables": [
+    {
+      "name": "departments",
+      "columns": [
+        {"name": "id", "type": "INTEGER", "primary_key": true},
+        {"name": "name", "type": "TEXT"}
+      ]
+    },
+    {
+      "name": "employees",
+      "columns": [
+        {"name": "id", "type": "INTEGER", "primary_key": true},
+        {"name": "first_name", "type": "TEXT"},
+        {"name": "last_name", "type": "TEXT"},
+        {
+          "name": "department_id",
+          "type": "INTEGER",
+          "references": "departments.id"
+        },
+        {"name": "salary", "type": "REAL"}
+      ]
+    }
+  ]
+}

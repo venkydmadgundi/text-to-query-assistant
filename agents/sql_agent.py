@@ -105,6 +105,9 @@ class TextToSQLAgent:
             result=result,
         )
 
+    def generate_and_execute_sql(self, question: str) -> SQLAnswer:
+        return self.ask(question)
+
 
 def create_text_to_sql_agent(settings: Settings, engine: Engine) -> TextToSQLAgent:
     if not settings.groq_api_key:
